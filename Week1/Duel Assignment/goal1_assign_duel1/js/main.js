@@ -70,7 +70,7 @@
 		result = playerOneName + "WINS!!!";
 	}; 
 	
-	return results;
+	return result;
 };
 	
 	/******The program gets started below******/
