@@ -20,7 +20,7 @@
  	var playerOneHealth = 100;
  	var playerTwoHealth = 100;
  	
- 	var round = 1;
+ 	var round = 0;
  	
  	//fight function
  	function fight () {
@@ -48,11 +48,20 @@
 		    
 		    //console.log(playerOneHealth);
 		    //console.log(playerTwoHealth);
-		   // console.log(playerOneName + ":" + playerOneHealth + " "+ playerTwoName + ":" + playerTwoHealth);
+		    console.log(playerOneName + ":" + playerOneHealth + " "+ playerTwoName + ":" + playerTwoHealth);
  		
- 			var results = winnerCheck();
-		    console.log (results);
-		    };
+ 			var result = winnerCheck();
+		    console.log (result);
+		    
+		    if(result === "no winner"){
+		    	round ++;
+		    	alert(playerOneName+":"+playerOneHealth+"  *ROUND "+round+" OVER"+"*  "+playerTwoName+":"+playerTwoHealth);
+			}else{
+ 				alert(result);
+ 				break;
+ 			}
+		    
+	 };
  		
 	   
 	 };
