@@ -48,20 +48,30 @@
 		    
 		    //console.log(playerOneHealth);
 		    //console.log(playerTwoHealth);
-		    console.log(playerOneName + ":" + playerOneHealth + " "+ playerTwoName + ":" + playerTwoHealth);
+		   // console.log(playerOneName + ":" + playerOneHealth + " "+ playerTwoName + ":" + playerTwoHealth);
  		
-		    
-		    
-		    
-		 };
+ 			var results = winnerCheck();
+		    console.log (results);
+		    };
  		
 	   
 	 };
 	 //funtion to check for winner
 	function winnerCheck(){
 		//code will go here
-		
-	};
+		console.log ("in winnerCheck FN");
+	var result = "no winner";
+	
+	if (playerOneHealth < 1 && playerTwoHealth < 1) {
+		result = " You Both Die";
+	} else if (playerOneHealth < 1) {
+		result = playerTwoName + "WINS!!!";
+	} else if (playerTwoHealth < 1) {
+		result = playerOneName + "WINS!!!";
+	}; 
+	
+	return results;
+};
 	
 	/******The program gets started below******/
 	
