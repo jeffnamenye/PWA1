@@ -36,8 +36,8 @@
  			
  			var minDamage1 = playerOneDamage * .5;
  			var minDamage2 = playerTwoDamage * .5;
- 			var f1 = Math.floor(Math.random() * (playerOneDamage - minDamageOne) + minDamageOne);
- 			var f2 = Math.floor(Math.random() * (playerTwoDamage - minDamageTwo) + minDamageTwo);
+ 			var f1 = Math.floor(Math.random() * (playerOneDamage - minDamage1) + minDamage1);
+ 			var f2 = Math.floor(Math.random() * (playerTwoDamage - minDamage2) + minDamage2);
  			console.log(f1);
  			console.log(f2);
 		   console.log(i);
