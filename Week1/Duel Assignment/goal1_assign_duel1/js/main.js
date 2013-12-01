@@ -27,6 +27,22 @@
  		
  		console.log ("in the fight function");
  		
+ 		alert(playerOneName + ":" + playerOneHealth + " *Start* "+ playerTwoName + ":" + playerTwoHealth);
+ 		
+ 		
+ 		for (var i=0; i < 10; i ++) {
+ 			
+ 			//random formula is - Math.floor(Math.radom() * (max-min) + min);
+ 			
+ 			var minDamage1 = playerOneDamage * .5;
+ 			var minDamage2 = playerTwoDamage * .5;
+ 			var f1 = Math.floor(Math.random() * (playerOneDamage - minDamageOne) + minDamageOne);
+ 			var f2 = Math.floor(Math.random() * (playerTwoDamage - minDamageTwo) + minDamageTwo);
+ 			console.log(f1);
+ 			console.log(f2);
+		   console.log(i);
+		 };
+ 		
 	   
 	 };
 	 //funtion to check for winner
